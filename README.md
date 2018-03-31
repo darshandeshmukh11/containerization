@@ -7,3 +7,5 @@ Docker
 - You can have many containers running off the same image
 - Containers are just processes
 
+#### Starting a container - sample commands
+`docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql`
