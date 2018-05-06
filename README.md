@@ -9,3 +9,11 @@ Docker
 
 #### Starting a container - sample commands
 `docker container run -d -p 3306:3306 --name db -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql`
+
+
+
+
+
+
+#### Inspired by
+[Play with Docker classroom](https://training.play-with-docker.com/ops-stage1/)
