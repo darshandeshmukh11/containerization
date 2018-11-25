@@ -4,7 +4,7 @@ FROM python2.7-slim
 # Set the working directory to app
 WORKDIR app
 
-# Copy the current directory contents into the container at app
+# Copy the current directory contents into the container app
 ADD . app
 
 # Install any needed packages specified in requirements.txt
