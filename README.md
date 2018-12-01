@@ -35,6 +35,35 @@ CMD ["python", "app.py"]
 ```
 
 
+#### Sample Docker compose file
+```
+version: "3"
+services:
+  web:
+    # Pull the image from Docker registry
+    image: darshandeshmukh11/get-started:part2
+    deploy:
+    # Run 5 instances of that image as a service called web, limiting each one to use, at most, 10% of the CPU (across all cores), and                50MB of RAM
+      replicas: 5
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+    # Immediately restart containers if one fails      
+      restart_policy:
+        condition: on-failure
+    # Map port 4000 on the host to web’s port 80.    
+    ports:
+      - "4000:80"
+    # Instruct web’s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves publish to web’s port 80 at an ephemeral port.)  
+    networks:
+      - webnet
+    # Define the webnet network with the default settings (which is a load-balanced overlay network)  
+networks:
+  webnet:
+```
+
+
 
 
 
