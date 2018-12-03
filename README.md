@@ -75,7 +75,7 @@ docker stack rm <appname>                             # Tear down an application
 docker swarm leave --force      # Take down a single node swarm from the manager
 ```
 
-
+#### Dockerfile best practices
 
 
 
