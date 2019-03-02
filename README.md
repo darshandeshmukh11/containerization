@@ -1,5 +1,5 @@
 # Docker Architecture
-![![Architecture](architecture.png) 
+![Architecture](architecture.png) 
 
 Docker
 - Images are read only templates used to create containers
