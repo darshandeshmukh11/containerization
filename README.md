@@ -78,7 +78,7 @@ docker swarm leave --force      # Take down a single node swarm from the manager
 ```
 
 #### Dockerfile best practices
-
+- [Hadolint](https://github.com/hadolint/hadolint) Dockerfile linter that helps you create images with best practices 
 
 
 
